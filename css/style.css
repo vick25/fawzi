@@ -73,8 +73,8 @@ a:focus {
 
   & .footer__logo {
     position: absolute;
-    /* top: -65px;
-    left: 374px; */
+    top: 0;
+    transform: translateY(-36%) translateX(-70%);
   }
 }
 
