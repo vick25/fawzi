@@ -90,6 +90,7 @@ a:focus {
   transition: opacity 250ms ease;
   position: absolute;
   right: 0;
+  z-index: 1;
 }
 
 .header__nav {
@@ -97,6 +98,12 @@ a:focus {
   visibility: hidden;
   height: 0;
   position: absolute;
+}
+
+.header__nav--visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
 }
 
 .header__menu {
@@ -301,6 +308,7 @@ a:focus {
   display: grid;
   justify-items: center;
   gap: 3em;
+  margin-bottom: 3em;
 
   & .contact__intro {
     display: grid;
