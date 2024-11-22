@@ -13,19 +13,25 @@
 
 <body class="container">
     <header class="header">
-        <nav class="header__nav">
-            <div class="header__logo">
-                <a href="/"><img src="./images/Logo.png" alt="Logo"></a>
+        <a href="/">
+            <div class="header__logo-content">
+                <span>fawziuiux</span><img src="./images/Logo.png" class="header__logo" alt="Logo">
             </div>
-
+        </a>
+        <button class="header__toggle" aria-label="open navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="header__nav">
             <menu class="header__menu">
-                <li class="header__menu-item">Home</li>
-                <li class="header__menu-item">About Me</li>
-                <li class="header__menu-item">Services</li>
-                <li class="header__menu-item">Projects</li>
-                <li class="header__menu-item">Testimonials</li>
-                <li class="header__menu-item">Contact</li>
-                <li class="header__menu-item header__menu-item--highlight">Download CV</li>
+                <li class="header__menu-item"><a href="/" class="menu-link">Home</a></li>
+                <li class="header__menu-item"><a href="#aboutMe" class="menu-link">About Me</a></li>
+                <li class="header__menu-item"><a href="#services" class="menu-link">Services</a></li>
+                <li class="header__menu-item"><a href="#projects" class="menu-link">Projects</a></li>
+                <li class="header__menu-item"><a href="#testimonials" class="menu-link">Testimonials</a></li>
+                <li class="header__menu-item"><a href="#contact" class="menu-link">Contact</a></li>
+                <li class="header__menu-item">
+                    <a href="#" class="header__menu-item--button">Download CV</a>
+                </li>
             </menu>
         </nav>
     </header>
