@@ -35,6 +35,10 @@ a:focus {
   opacity: 0.75;
 }
 
+.h2 {
+  font-size: 2rem;
+}
+
 .header {
   position: relative;
   display: flex;
@@ -222,6 +226,26 @@ a:focus {
   padding-block: 2em;
 }
 
+.about__content {
+  display: grid;
+  gap: 2em;
+}
+
+.about__description {
+  display: grid;
+  gap: 0.75em;
+
+  & ul {
+    display: grid;
+    gap: 1em;
+  }
+
+  & li {
+    font-weight: 700;
+    font-size: small;
+  }
+}
+
 .projects {
   display: flex;
   flex-direction: column;
@@ -265,6 +289,15 @@ a:focus {
   align-items: center;
 }
 
+.footer__socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  color: black;
+}
+
 /* Media queries */
 @media (min-width: 1020px) {
   .header {
@@ -293,8 +326,7 @@ a:focus {
     align-items: center;
   }
 
-  .footer__menu,
-  .footer__socials {
+  .footer__menu {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -315,7 +347,8 @@ a:focus {
     gap: 1em;
   }
 
-  .hero__content {
+  .hero__content,
+  .about__content {
     width: 65%;
   }
 }
