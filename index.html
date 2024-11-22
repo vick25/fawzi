@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="container">
-    <header class="header">
+<body>
+    <header class="header container">
         <a href="/">
             <div class="header__logo-content">
                 <span>fawziuiux</span><img src="./images/Logo.png" class="header__logo" alt="Logo">
@@ -36,7 +36,7 @@
         </nav>
     </header>
 
-    <main class="main">
+    <main class="main container">
         <section id="hero" class="hero">
             <div class="hero__content">
                 <div class="hero__intro">
@@ -241,8 +241,11 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__content">
-            <a href="/" class="footer__logo"><img src="./images/Logo.png" alt="Logo"></a>
+        <div class="footer__content container">
+            <div class="footer__logo-content">
+                <span>fawziuiux</span>
+                <a href="/" class="footer__logo"><img src="./images/Logo.png" alt="Logo"></a>
+            </div>
             <nav class="footer__nav">
                 <menu class="footer__menu">
                     <li class="footer__menu-item">Home</li>
@@ -261,7 +264,9 @@
             </ul>
         </div>
         <div class="footer__info">
-            <p class="footer__text">@ 2023 <span>Fawzi UX/UI</span> All rights reserved, Inc.</p>
+            <div class="container">
+                <p class="footer__text">@ 2023 <span>Fawzi UX/UI</span> All rights reserved, Inc.</p>
+            </div>
         </div>
     </footer>
 
