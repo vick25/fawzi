@@ -108,11 +108,17 @@ a:focus {
 }
 
 .header__menu-item--button,
-.hero__cta-link {
+.hero__cta-link,
+.contact__button,
+.active {
   background: var(--clr-orange-500);
   color: #fff !important;
   padding: 0.25em 1em;
   border-radius: 3px;
+}
+
+.contact__button {
+  border: none;
 }
 
 .hero__profile {
@@ -264,6 +270,8 @@ a:focus {
 .projects__filter {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 1em;
 }
 
@@ -287,6 +295,32 @@ a:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.contact {
+  display: grid;
+  justify-items: center;
+  gap: 3em;
+
+  & .contact__intro {
+    display: grid;
+    justify-items: center;
+    gap: 1em;
+  }
+}
+
+.contact__form {
+  padding: 1em;
+  display: flex;
+  gap: 1em;
+}
+
+.contact__form input[type="text"] {
+  font-size: 1rem;
+  border-width: 0.5px;
+  padding: 10px 8px;
+  border-radius: 10px;
+  width: 100%;
 }
 
 .footer__socials {
