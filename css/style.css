@@ -114,14 +114,18 @@ a:focus {
   justify-content: space-between;
 }
 
-.header__menu-item--button,
+.header__menu__item--button,
 .hero__cta-link,
-.contact__button,
-.active {
+.contact__button {
   background: var(--clr-orange-500);
   color: #fff !important;
   padding: 0.25em 1em;
   border-radius: 3px;
+}
+
+.projects__filter__item-active {
+  background: var(--clr-orange-500);
+  color: #fff !important;
 }
 
 .contact__button {
