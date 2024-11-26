@@ -409,6 +409,7 @@ a:focus {
   display: grid;
   justify-items: center;
   gap: 3em;
+  margin-inline: 5em;
   margin-bottom: 3em;
 
   & .contact__intro {
