@@ -123,11 +123,6 @@ a:focus {
   border-radius: 3px;
 }
 
-.projects__filter__item-active {
-  background: var(--clr-orange-500);
-  color: #fff !important;
-}
-
 .contact__button {
   border: none;
 }
@@ -266,16 +261,34 @@ a:focus {
 .projects {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 3.5em;
   padding-block: 2em;
   text-align: center;
 }
 
 .services__list,
 .projects__gallery {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1em;
+}
+
+.services__item {
+  background-color: #f8f8f8;
+  padding: 2em 1em;
+  border-radius: 3%;
+  display: grid;
+  gap: 1em;
+
+  & .services__name {
+    font-weight: 600;
+    font-size: 1.15rem;
+  }
+}
+
+.projects__title {
+  margin-bottom: 0.5em;
 }
 
 .projects__filter {
@@ -284,11 +297,23 @@ a:focus {
   align-items: center;
   justify-content: center;
   gap: 1em;
+
+  & .projects__filter__item {
+    background-color: #f8f8f8;
+    padding: 0.5em 0.8em;
+    border-radius: 5px;
+    border: 1px solid #bab5b5;
+  }
+
+  & .projects__filter__item-active {
+    background: var(--clr-orange-500);
+    color: #fff !important;
+  }
 }
 
 .testimonials {
   display: grid;
-  gap: 2em;
+  gap: 2.5em;
   padding-block: 2em;
 }
 
@@ -306,6 +331,70 @@ a:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.testimonials__content {
+  display: grid;
+  gap: 1.5em;
+  justify-items: center;
+}
+
+.testimonials__list {
+  width: 75%;
+  display: flex;
+  gap: 3em;
+}
+
+.testimonials__item {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 2em;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+
+  & .testimonials__photo {
+    width: 20%;
+    flex-grow: 1;
+  }
+
+  & .testimonials__details {
+    width: 60%;
+    flex-grow: 1;
+    display: grid;
+    gap: 1.5em;
+  }
+}
+
+.testimonials__text::before,
+.testimonials__text::after {
+  display: block;
+  margin: 0 auto;
+  height: 10px;
+}
+
+.testimonials__text::before,
+.testimonials__text::after {
+  content: ' " ';
+  color: var(--clr-orange-500);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+/* .testimonials__text::before {
+  transform: rotate(5deg);
+} */
+
+.testimonials__text::after {
+  transform: translateX(45px);
+}
+
+.testimonials__author {
+  font-weight: 600;
+}
+
+.testimonials__author span {
+  font-weight: normal;
 }
 
 .contact {
