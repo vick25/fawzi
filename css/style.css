@@ -123,10 +123,6 @@ a:focus {
   border-radius: 3px;
 }
 
-.contact__button {
-  border: none;
-}
-
 .hero__profile {
   display: grid;
   gap: 1em;
@@ -253,9 +249,22 @@ a:focus {
   }
 
   & li {
+    position: relative;
     font-weight: 700;
     font-size: small;
   }
+}
+
+.about__skill__item::after {
+  display: block;
+  margin: 5px auto;
+  height: 5px;
+  border-radius: 5px;
+  background-color: var(--clr-orange-500);
+}
+
+.about__skill__item::after {
+  content: "";
 }
 
 .projects {
@@ -401,6 +410,7 @@ a:focus {
   display: grid;
   justify-items: center;
   gap: 3em;
+  margin-inline: 5em;
   margin-bottom: 3em;
 
   & .contact__intro {
@@ -411,6 +421,7 @@ a:focus {
 }
 
 .contact__form {
+  width: 100%;
   padding: 1em;
   display: flex;
   gap: 1em;
@@ -421,7 +432,13 @@ a:focus {
   border-width: 0.5px;
   padding: 10px 8px;
   border-radius: 10px;
-  width: 100%;
+  width: 70%;
+  flex-grow: 1;
+}
+
+.contact__button {
+  border: none;
+  flex-grow: 1;
 }
 
 .footer__socials {
