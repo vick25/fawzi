@@ -123,10 +123,6 @@ a:focus {
   border-radius: 3px;
 }
 
-.contact__button {
-  border: none;
-}
-
 .hero__profile {
   display: grid;
   gap: 1em;
@@ -253,9 +249,22 @@ a:focus {
   }
 
   & li {
+    position: relative;
     font-weight: 700;
     font-size: small;
   }
+}
+
+.about__skill__item::after {
+  display: block;
+  margin: 5px auto;
+  height: 5px;
+  border-radius: 5px;
+  background-color: var(--clr-orange-500);
+}
+
+.about__skill__item::after {
+  content: "";
 }
 
 .projects {
@@ -329,6 +338,7 @@ a:focus {
 
 .testimonials__item {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
@@ -354,12 +364,10 @@ a:focus {
   border-radius: 5px;
 
   & .testimonials__photo {
-    width: 20%;
     flex-grow: 1;
   }
 
   & .testimonials__details {
-    width: 60%;
     flex-grow: 1;
     display: grid;
     gap: 1.5em;
@@ -411,6 +419,7 @@ a:focus {
 }
 
 .contact__form {
+  width: 100%;
   padding: 1em;
   display: flex;
   gap: 1em;
@@ -421,7 +430,13 @@ a:focus {
   border-width: 0.5px;
   padding: 10px 8px;
   border-radius: 10px;
-  width: 100%;
+  width: 70%;
+  flex-grow: 1;
+}
+
+.contact__button {
+  border: none;
+  flex-grow: 1;
 }
 
 .footer__socials {
@@ -485,5 +500,21 @@ a:focus {
   .hero__content,
   .about__content {
     width: 65%;
+  }
+
+  .testimonials__item {
+    flex-direction: row;
+
+    & .testimonials__photo {
+      width: 20%;
+    }
+
+    & .testimonials__details {
+      width: 60%;
+    }
+  }
+
+  .contact {
+    margin-inline: 3em;
   }
 }
