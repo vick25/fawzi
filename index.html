@@ -5,243 +5,254 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fawzi UI/UX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./main.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div>
-                <a href="/"><img src="./images/Logo.png" alt="Logo"></a>
+    <header class="header container">
+        <a href="/">
+            <div class="header__logo-content">
+                <span>fawziuiux</span><img src="./images/Logo.png" class="header__logo" alt="Logo">
             </div>
-
-            <menu>
-                <li>Home</li>
-                <li>About Me</li>
-                <li>Services</li>
-                <li>Projects</li>
-                <li>Testimonials</li>
-                <li>Contact</li>
-                <li>Download CV</li>
+        </a>
+        <button class="header__toggle" aria-label="open navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="header__nav">
+            <menu class="header__menu">
+                <li class="header__menu__item"><a href="/" class="menu__link">Home</a></li>
+                <li class="header__menu__item"><a href="#aboutMe" class="menu__link">About Me</a></li>
+                <li class="header__menu__item"><a href="#services" class="menu__link">Services</a></li>
+                <li class="header__menu__item"><a href="#projects" class="menu__link">Projects</a></li>
+                <li class="header__menu__item"><a href="#testimonials" class="menu__link">Testimonials</a></li>
+                <li class="header__menu__item"><a href="#contact" class="menu__link">Contact</a></li>
+                <li class="header__menu__item">
+                    <a href="#" class="header__menu__item--button">Download CV</a>
+                </li>
             </menu>
         </nav>
     </header>
 
-    <main>
-        <section id="hero">
-            <div>
-                <div>
-                    <p>Hi I am</p>
-                    <h1>Fawzi Sayed</h1>
-                    <h2>UI & UX Designer</h2>
+    <main class="main container">
+        <section id="hero" class="hero">
+            <div class="hero__content">
+                <p class="hero__text">Hi I am</p>
+                <div class="hero__intro">
+                    <h1 class="hero__name">Fawzi Sayed</h1>
+                    <h2 class="hero__profession">UI & UX <br>
+                        <span>Designer</span>
+                    </h2>
+                    <p class="hero__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                        delectus
+                        asperiores
+                        praesentium repellat sit id totam nulla voluptatem voluptate ipsam a, ratione eius itaque?
+                        Consectetur alias vitae rem reprehenderit praesentium?
+                    </p>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi delectus asperiores
-                    praesentium repellat sit id totam nulla voluptatem voluptate ipsam a, ratione eius itaque?
-                    Consectetur alias vitae rem reprehenderit praesentium?
-                </p>
-                <div><a href="">Hire Me</a></div>
+                <div class="hero__cta"><a href="" class="hero__cta-link">Hire Me</a></div>
             </div>
-            <div>
-                <div>
-                    <img src="./images/Layer1.png" alt="Fawzi">
-                    <img src="./images/Layer.png" alt="Fawzi">
+            <div class="hero__profile">
+                <div class="hero__wrapper">
+                    <img src="./images/group_2.png" alt="Fawzi" class="hero__image">
                 </div>
-                <div>
-                    <ul>
-                        <li>FaceBook</li>
-                        <li>X</li>
-                        <li>Instagram</li>
-                        <li>LinkedIn</li>
+                <ul class="hero__socials">
+                    <li class="hero__social__item"><a href="#"><img src="./images/facebook.svg" alt="FaceBook"></a>
+                    </li>
+                    <li class="hero__social__item"><a href="#"><img src="./images/X.svg" alt="FaceBook"></a></li>
+                    <li class="hero__social__item"><a href="#"><img src="./images/instagram.svg" alt="FaceBook"></a>
+                    </li>
+                    <li class="hero__social__item"><a href="#"><img src="./images/linkedIn.svg" alt="FaceBook"></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="aboutMe" class="about">
+            <div class="about__wrapper">
+                <img src="./images/group_7.png" alt="Fawzi" class="about__image">
+            </div>
+            <div class="about__content">
+                <h2 class="about__title h2">About Me</h2>
+                <div class="about__description">
+                    <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cum
+                        repudiandae officia error</p>
+                    <ul class="about__skill">
+                        <li class="about__skill__item">UX</li>
+                        <li class="about__skill__item">Website Design</li>
+                        <li class="about__skill__item">App Design</li>
+                        <li class="about__skill__item">Graphic Design</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section id="aboutMe">
-            <div>
-                <img src="./images/Background copy 1.png" alt="Fawzi">
-                <img src="./images/Background copy 2.png" alt="Fawzi">
-            </div>
-            <div>
-                <h2>About Me</h2>
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati cum repudiandae officia error
-                        dolores asperiores labore numquam repellendus sunt minima commodi aliquam debitis animi, saepe
-                        hic, voluptate eum corporis. Repudiandae?</p>
-                    <div>
-                        <ul>
-                            <li>UX</li>
-                            <li>Website Design</li>
-                            <li>App Design</li>
-                            <li>Graphic Design</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <section id="services" class="services">
+            <h2 class="services__title h2">Services</h2>
 
-        <section id="services">
-            <h2>Services</h2>
-
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, aut cumque. Quae iste voluptas
+            <p class="services__intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, aut cumque. Quae
+                iste voluptas
                 veritatis odit placeat, sequi ratione doloribus cumque? Ducimus dolores illo mollitia deserunt
                 architecto praesentium impedit? Sapiente.</p>
 
-            <ul>
-                <div>
-                    <div><img src="" alt="ui/ux"></div>
-                    <div>
-                        <p>UI/UX</p>
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum, harum laudantium sint
-                            quas magni quia at quisquam et deserunt rem totam nisi aliquam. Culpa ipsa sed iure corrupti
-                            voluptatibus.</p>
-                    </div>
-                </div>
-                <div>
-                    <div><img src="" alt="Web Design"></div>
-                    <div>
-                        <p>Web Design</p>
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum, harum laudantium sint
-                            quas magni quia at quisquam et deserunt rem totam nisi aliquam. Culpa ipsa sed iure corrupti
-                            voluptatibus.</p>
-                    </div>
-                </div>
-                <div>
-                    <div><img src="" alt="App Design"></div>
-                    <div>
-                        <p>App Design</p>
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum, harum laudantium sint
-                            quas magni quia at quisquam et deserunt rem totam nisi aliquam. Culpa ipsa sed iure corrupti
-                            voluptatibus.</p>
-                    </div>
-                </div>
-                <div>
-                    <div><img src="" alt="Graphic Design"></div>
-                    <div>
-                        <p>Graphic Design</p>
-                    </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ipsum, harum laudantium sint
-                            quas magni quia at quisquam et deserunt rem totam nisi aliquam. Culpa ipsa sed iure corrupti
-                            voluptatibus.</p>
-                    </div>
-                </div>
+            <ul class="services__list">
+                <li class="services__item">
+                    <div class="services__image-wrapper"><img src="./images/uiux.png" alt="ui/ux"
+                            class="services__image"></div>
+
+                    <p class="services__name">UI/UX</p>
+
+                    <p class="services__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </li>
+                <li class="services__item">
+                    <div class="services__image-wrapper"><img src="./images/web_design.png" alt="Web Design"
+                            class="services__image"></div>
+                    <p class="services__name">Web Design</p>
+                    <p class="services__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </li>
+                <li class="services__item">
+                    <div class="services__image-wrapper"><img src="./images/app_design.png" alt="App Design"
+                            class="services__image"></div>
+                    <p class="services__name">App Design</p>
+                    <p class="services__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </li>
+                <li class="services__item">
+                    <div class="services__image-wrapper"><img src="./images/graphic_design.png" alt="Graphic Design"
+                            class="services__image"></div>
+                    <p class="services__name">Graphic Design</p>
+                    <p class="services__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </li>
             </ul>
         </section>
 
-        <section id="projects">
-            <div>
-                <h2>My Projects</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quia aspernatur, fugit sint aliquam cum
-                    minima tenetur magni, iusto impedit assumenda! Totam eveniet veniam illum unde error deleniti
-                    praesentium quod?</p>
+        <section id="projects" class="projects">
+            <div class="projects__intro">
+                <h2 class="projects__title h2">My Projects</h2>
+                <p class="projects__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quia
+                    aspernatur, fugit sint aliquam cum
+                    minima tenetur magni</p>
             </div>
-            <ul>
-                <li>All</li>
-                <li>UI/UX</li>
-                <li>Web Design</li>
-                <li>App Design</li>
-                <li>Graphic Design</li>
+            <ul class="projects__filter">
+                <li class="projects__filter__item">All</li>
+                <li class="projects__filter__item projects__filter__item-active">UI/UX</li>
+                <li class="projects__filter__item">Web Design</li>
+                <li class="projects__filter__item">App Design</li>
+                <li class="projects__filter__item">Graphic Design</li>
             </ul>
-            <div>
-                <article>
-                    <div>
-                        <img src="./images/Web Designs-1.png" alt="">
-                        <img src="./images/Web Designs.png" alt="">
+            <div class="projects__gallery">
+                <article class="projects__card">
+                    <div class="projects__image-wrapper">
+                        <img src="./images/aircalling.png" alt="" class="projects__image">
                     </div>
-                    <div>
-                        <p>Web Design</p>
-                        <p>AirCalling Landing Page Design</p>
-                    </div>
-                </article>
-                <article>
-                    <div>
-                        <img src="./images/Web Designs-3.png" alt="">
-                        <img src="./images/Web Designs-2.png" alt="">
-                    </div>
-                    <div>
-                        <p>Web Design</p>
-                        <p>Business Landing Page Design</p>
+                    <div class="projects__info">
+                        <p class="projects__type">Web Design</p>
+                        <p class="projects__title">AirCalling Landing Page Design</p>
                     </div>
                 </article>
-                <article>
-                    <div>
-                        <img src="./images/Web Designs-5.png" alt="">
-                        <img src="./images/Web Designs-4.png" alt="">
+                <article class="projects__card">
+                    <div class="projects__image-wrapper">
+                        <img src="./images/business.png" alt="" class="projects__image">
                     </div>
-                    <div>
-                        <p>Web Design</p>
-                        <p>Ecom Web Page Design</p>
+                    <div class="projects__info">
+                        <p class="projects__type">Web Design</p>
+                        <p class="projects__title">Business Landing Page Design</p>
+                    </div>
+                </article>
+                <article class="projects__card">
+                    <div class="projects__image-wrapper">
+                        <img src="./images/ecom.png" alt="" class="projects__image">
+                    </div>
+                    <div class="projects__info">
+                        <p class="projects__type">Web Design</p>
+                        <p class="projects__title">Ecom Web Page Design</p>
                     </div>
                 </article>
             </div>
         </section>
 
-        <section id="testimonials">
-            <h2>Testimonials</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam corporis adipisci amet excepturi
-                ipsam eaque consequuntur perferendis fuga a, molestiae dolorem ea dolor quisquam architecto illo
-                commodi doloremque repellendus porro.</p>
-            <div>
-                <ul>
-                    <li>
-                        <div>
-                            <img src="./images/Ellipse 10.png" alt="Photo">
+        <section id="testimonials" class="testimonials">
+            <div class="testimonials__intro">
+                <h2 class="testimonials__intro-title h2">Testimonials</h2>
+                <p class="testimonials__intro-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Veniam corporis
+                    adipisci amet excepturi
+                    ipsam eaque consequuntur perferendis fuga a, molestiae dolorem ea dolor quisquam architecto illo
+                    commodi doloremque repellendus porro.
+                </p>
+            </div>
+            <div class="testimonials__content">
+                <ul class="testimonials__list">
+                    <li class="testimonials__item">
+                        <div class="testimonials__photo">
+                            <img src="./images/ellipse_10.png" alt="Photo" class="testimonials__image">
                         </div>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At placeat, suscipit eligendi
+                        <div class="testimonials__details">
+                            <p class="testimonials__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
+                                placeat, suscipit eligendi
                                 repudiandae porro voluptatem perspiciatis laudantium adipisci exercitationem voluptas
                                 similique
                                 impedit mollitia dolorum delectus aperiam voluptatum ipsum temporibus quod!</p>
-                            <p>Name <br> <span>CEO</span></p>
+                            <p class="testimonials__author">
+                                Name <br> <span class="testimonials__author-role">CEO</span>
+                            </p>
                         </div>
                     </li>
                 </ul>
-                <div>1,2,3,4</div>
+                <div class="testimonials__pagination">
+                    1, 2, 3, 4
+                </div>
             </div>
         </section>
 
-        <section id="contact">
-            <div>
-                <h2>Lets Design Together</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, velit praesentium eum fugiat aut
+        <section id="contact" class="contact">
+            <div class="contact__intro">
+                <h2 class="contact__title h2">Let's Design Together</h2>
+                <p class="contact__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, velit
+                    praesentium eum fugiat aut
                     adipisci, eligendi quibusdam voluptate quam cumque officia possimus? Facere reprehenderit ex
                     voluptate totam odit est minima!</p>
             </div>
-            <form action="">
-                <input type="text" placeholder="Enter your mail">
-                <button type="submit">Contact Me</button>
+            <form action="" class="contact__form">
+                <input type="text" placeholder="Enter your mail" class="contact__input">
+                <button type="submit" class="contact__button">Contact Me</button>
             </form>
         </section>
     </main>
 
-    <footer>
-        <div>
-            <a href="/"><img src="./images/Logo.png" alt="Logo"></a>
-            <nav>
-                <menu>
-                    <li>Home</li>
-                    <li>About Me</li>
-                    <li>Services</li>
-                    <li>Projects</li>
-                    <li>Testimonials</li>
-                    <li>Contact</li>
+    <footer class="footer">
+        <div class="footer__content container">
+            <a href="/" class="footer__logo">
+                <div class="footer__logo-content">
+                    <span>fawziuiux</span>
+                    <img src="./images/Logo.png" class="footer__logo" alt="Logo">
+                </div>
+            </a>
+            <nav class="footer__nav">
+                <menu class="footer__menu">
+                    <li class="footer__menu__item">Home</li>
+                    <li class="footer__menu__item">About Me</li>
+                    <li class="footer__menu__item">Services</li>
+                    <li class="footer__menu__item">Projects</li>
+                    <li class="footer__menu__item">Testimonials</li>
+                    <li class="footer__menu__item">Contact</li>
                 </menu>
             </nav>
-            <ul>
-                <li>FaceBook</li>
-                <li>X</li>
-                <li>Instagram</li>
-                <li>LinkedIn</li>
+            <ul class="footer__socials">
+                <li class="footer__social__item"><a href="#"><img src="./images/facebook.svg" alt="FaceBook"></a>
+                </li>
+                <li class="footer__social__item"><a href="#"><img src="./images/X.svg" alt="FaceBook"></a></li>
+                <li class="footer__social__item"><a href="#"><img src="./images/instagram.svg" alt="FaceBook"></a>
+                </li>
+                <li class="footer__social__item"><a href="#"><img src="./images/linkedIn.svg" alt="FaceBook"></a>
+                </li>
             </ul>
         </div>
-        <div>
-            <p>@ 2023 <span>Fawzi UX/UI</span> All rigths reservers, Inc.</p>
+        <div class="footer__info">
+            <div class="container">
+                <p class="footer__text">@ 2023 <span>Fawzi UX/UI</span> All rights reserved, Inc.</p>
+            </div>
         </div>
     </footer>
 
